@@ -1,0 +1,36 @@
+$color: rgb(184, 40, 40);
+$activeColor: #771212;
+
+.nav {
+	display: flex;
+	padding: 0 10vw;
+	background: rgb(14, 0, 0);
+
+	&__main {
+		flex: 1;
+	}
+
+	&__link {
+		display: inline-block;
+		cursor: pointer;
+		padding: 1rem;
+		color: $color;
+		text-decoration: none;
+		font-weight: 700;
+
+		&:hover {
+			background: lighten($activeColor, 10);
+			color: lighten($color, 10);
+		}
+	}
+
+	&__active {
+		background: $activeColor;
+	}
+
+	&__user {
+		color: $color;
+		display: inline-block;
+		padding: 1rem;
+	}
+}

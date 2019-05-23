@@ -1,0 +1,10 @@
+@import '../../styles/variables';
+
+.input {
+	border: none;
+	border-bottom: $lineWidth solid $primary;
+	display: block;
+	font-size: inherit;
+	padding: .5rem;
+	width: 100%;
+}

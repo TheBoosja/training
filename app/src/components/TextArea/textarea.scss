@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+.textarea {
+	border: none;
+	border-bottom: $lineWidth solid $primary;
+	font-family: inherit;
+	height: 100%;
+	min-height: $lgGap;
+	padding: $gap;
+	resize: none;
+	width: 100%;
+
+	&:focus {
+		background-color: lighten($primary, 50);
+	}
+}

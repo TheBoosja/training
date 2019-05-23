@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.checkbox {
+	display: inline-block;
+	padding: $smGap $gap;
+	padding-left: 0;
+
+	&__input {
+		display: none;
+	}
+
+	&__label {
+		align-items: center;
+		cursor: pointer;
+		display: grid;
+		grid-gap: $gap;
+		grid-template-columns: min-content max-content;
+		user-select: none;
+
+		&::before {
+			border: $lineWidth solid $primary;
+			content: "";
+			display: block;
+			height: $lgGap;
+			width: $lgGap;
+		}
+
+		.checkbox__input:checked + &::before {
+			background-color: $primary;
+			border: $smGap solid $pLight;
+		}
+	}
+}

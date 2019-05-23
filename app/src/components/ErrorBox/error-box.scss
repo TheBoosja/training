@@ -1,0 +1,24 @@
+.error {
+	padding: 1rem;
+	border: 1px solid red;
+	background-color: lighten(red, 42);
+	display: flex;
+
+	&__label {
+		flex: 1;
+	}
+
+	&__close {
+		// border: 1px solid black;
+		width: 2rem;
+		height: 2rem;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 1.1;
+
+		&:hover {
+			cursor: pointer;
+			background-color: lighten(red, 35);
+		}
+	}
+}
